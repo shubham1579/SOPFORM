@@ -4,6 +4,7 @@ const app = express();
 const port = process.env.PORT || 8000;
 const nodemailer = require('nodemailer');
 
+
 app.use(express.static('./FrontEnd'));
 // to convert the data into json object
 app.use(express.json());
