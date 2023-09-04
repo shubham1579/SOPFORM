@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submitted Successfully</title>
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #success-container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1, p {
+            color: #333;
+        }
+
+        /* Add Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Apply Animation */
+        #success-container {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            #success-container {
+                padding: 10px;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="success-container">
+        <h1>Form Submitted Successfully!</h1>
+        <p>An email has been sent to your registered Email.</p>
+        <!-- You can add more content, styles, or animations here -->
+    </div>
+</body>
+</html>

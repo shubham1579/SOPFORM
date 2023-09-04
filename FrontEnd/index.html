@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized SOP Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container mt-3 mb-3 mt-md-5 mb-md-5 p-4" id="form-container">
+
+        <div id="heading" class="mb-5">
+            <h1 class="mb-1">Customized SOP Generator</h1>
+            <p class="star">* Indicates required question</p>
+        </div>
+
+        <form class="mt-4" id="sopForm">
+
+            <div class="form-group mb-4">
+                <label class="mb-2" for="email">Email <span class="star">*</span></label>
+                <input type="email" id="email" name="email" class="form-control input-custom-width border border-light p-2 mb-2 border-opacity-10" placeholder="Your email address" required>
+            </div>
+
+
+            <div class="form-group mb-4">
+                <label class="mb-2" for="fullName">Full Name <span class="star">*</span></label>
+                <input type="text" id="fullName" name="fullName" class="form-control input-custom-width border border-light p-2 mb-2 border-opacity-10" placeholder="Your Name" required>
+            </div>
+
+
+            <div class="form-group mb-4">
+                <label class="mb-2" for="age">Age <span class="star">*</span></label>
+                <input type="number" id="age" name="age" class="form-control input-custom-width border border-light p-2 mb-2 border-opacity-10" placeholder="Your age" required>
+            </div>
+
+            
+            <div class="form-group mb-4">
+                <label class="mb-2" for="educationLevel">Highest Level of Education <span class="star">*</span></label>
+                <select id="educationLevel" name="educationLevel" class="form-control border border-light p-2 mb-2 border-opacity-10" required>
+                    <option value="" disabled selected style="display:none;">Choose</option>
+                    <option value="Grade 12">Grade 12</option>
+                    <option value="Diploma">Diploma</option>
+                    <option value="Bachelors Degree">Bachelors Degree</option>
+                    <option value="Masters Degree">Masters Degree</option>
+                    <option value="PhD">PhD</option>
+                </select>
+            </div>
+
+
+            <div class="form-group mb-4">
+                <label class="mb-2" for="educationInstitute">Institute where you completed your highest level of education <span class="star">*</span></label>
+                <input type="text" id="educationInstitute" name="educationInstitute" class="form-control border border-light p-2 mb-2 border-opacity-10" placeholder="Your answer" required>
+            </div>
+
+            
+            <div class="form-group mb-4">
+                <label class="mb-2" for="studyField">What did you study <span class="star">*</span></label>
+                <input type="text" id="studyField" name="studyField" class="form-control input-custom-width border border-light p-2 mb-2 border-opacity-10" placeholder="Your answer" required>
+            </div>
+
+            
+            <div class="form-group mb-4">
+                <label for="workExperience">Do you have any relevant work experience? <span class="star">*</span></label>
+                <div class="workexperience">
+                    <p class="mt-1">Write None if no work experience. Provide the following details if yes:</p>
+                    <ol start="1">
+                        <li>Job Title</li>
+                        <li>Comapany Name</li>
+                        <li>Job duties</li>
+                    </ol>
+                    <p>Sample Answer: I worked as a Sales Manager at Effizient Immigration Inc from Jan 2022 till Feb 2023. In this role, I managed sales operations, reaching out to leads, lead the outreach program, ensured meeting monthly targets.</p>
+                </div>
+                <input type="text" id="workExperience" name="workExperience" class="form-control border border-light p-2 mb-2 border-opacity-10" placeholder="Your answer" required>
+            </div>
+
+
+            <div class="form-group mb-4">
+                <label class="mb-3">Did you ever studied in Canada? <span class="star">*</span></label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="studiedCanada" value="Yes" id="studiedCanada1" required>
+                    <label class="form-check-label" for="flexRadioDefault1">Yes</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="studiedCanada" value="No" id="studiedCanada2" required>
+                    <label class="form-check-label" for="flexRadioDefault2">No</label>
+                </div>
+            </div>
+
+            
+            <div class="form-group mb-4">
+                <label class="mb-2" for="canadianInstitute">Which institute did you get admitted to in Canada? <span class="star canadadetail">*</span></label>
+                <input type="text" id="canadianInstitute" name="canadianInstitute" class="form-control border border-light p-2 mb-2 border-opacity-10" placeholder="Your answer" required disabled>
+            </div>
+
+            
+            <div class="form-group mb-4">
+                <label class="mb-2" for="canadianProgram">What is your program of study in Canada? <span class="star canadadetail">*</span></label>
+                <input type="text" id="canadianProgram" name="canadianProgram" class="form-control input-custom-width border border-light p-2 mb-2 border-opacity-10" placeholder="Your answer" required disabled>
+            </div>
+
+            
+            <div class="form-group mb-4">
+                <label class="mb-2" for="applyingCountry">Which country are you applying from? <span class="star">*</span></label>
+                <input type="text" id="applyingCountry" name="applyingCountry" class="form-control input-custom-width border border-light p-2 mb-2 border-opacity-10" placeholder="Your answer" required>
+            </div>
+
+            
+            <div class="form-group mb-4">
+                <label class="mb-2" for="futureGoals">What are your future goals? <span class="star">*</span></label>
+                <input type="text" id="futureGoals" name="futureGoals" class="form-control border border-light p-2 mb-2 border-opacity-10" rows="4" placeholder="Your answer" required>
+            </div>
+
+            
+            <div class="form-group mb-4">
+                <label class="mb-2" for="listeningScore">English Scores - Listening <span class="star">*</span></label>
+                <input type="number" id="listeningScore" name="listeningScore" class="form-control input-custom-width border border-light p-2 mb-2 border-opacity-10" placeholder="Your answer" required>
+            </div>
+
+            
+            <div class="form-group mb-4">
+                <label class="mb-2" for="readingScore">English Scores - Reading <span class="star">*</span></label>
+                <input type="number" id="readingScore" name="readingScore" class="form-control input-custom-width border border-light p-2 mb-2 border-opacity-10" placeholder="Your answer" required>
+            </div>
+
+            
+            <div class="form-group mb-4">
+                <label class="mb-2" for="speakingScore">English Scores - Speaking <span class="star">*</span></label>
+                <input type="number" id="speakingScore" name="speakingScore" class="form-control input-custom-width border border-light p-2 mb-2 border-opacity-10" placeholder="Your answer" required>
+            </div>
+
+            
+            <div class="form-group mb-4">
+                <label class="mb-2" for="writingScore">English Scores - Writing <span class="star">*</span></label>
+                <input type="number" id="writingScore" name="writingScore" class="form-control input-custom-width border border-light p-2 mb-2 border-opacity-10" placeholder="Your answer" required>
+            </div>
+
+            
+            <div class="form-group mb-4">
+                <label class="mb-3">Did you pay your first-year tuition? <span class="star">*</span></label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="Yes" name="tuitionPaid" id="tuitionPaid1" required>
+                    <label class="form-check-label" for="flexRadioDefault3">Yes</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="No" name="tuitionPaid" id="tuitionPaid2" required>
+                    <label class="form-check-label" for="flexRadioDefault4">No</label>
+                </div>
+            </div>
+
+            
+            <div class="form-group mb-4" id="tuitionFeeField">
+                <label class="mb-2" for="tuitionFee">How much tuition fee did you pay? <span class="star tution">*</span></label>
+                <input type="number" id="tuitionFee" name="tuitionFee" class="form-control border border-light p-2 mb-2 border-opacity-10"  placeholder="Your answer" required disabled>
+            </div>
+
+            
+            <div class="form-group mb-4">
+                <label class="mb-3" for="gicDone">Did you do a GIC? <span class="star">*</span></label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="Yes" name="gicDone" id="gicDone1" required>
+                    <label class="form-check-label" for="flexRadioDefault5">Yes</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="No" name="gicDone" id="gicDone2" required>
+                    <label class="form-check-label" for="flexRadioDefault6">No</label>
+                </div>
+            </div>
+
+            
+            <div class="form-group mb-5" id="gicAmountField">
+                <label class="mb-2" for="gicAmount">How much did you pay towards GIC? <span class="star gic">*</span></label>
+                <input type="number" id="gicAmount" name="gicAmount" class="form-control border border-light p-2 mb-2 border-opacity-10" placeholder="Your answer" required disabled>
+            </div>
+
+            <hr class="mb-4">
+
+            <div class="btns">
+                <button id="submit" type="button" class="btn btn-outline-primary" disabled>Submit</button>
+                <button id="reset" type="reset" class="btn btn-outline-warning">Clear form</button>
+            </div>
+
+        </form>
+
+        
+    </div>
+    <div class="loader"></div>
+
+
+    <!-- Add Bootstrap JS and jQuery (for Bootstrap components) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

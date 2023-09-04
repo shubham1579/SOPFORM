@@ -1,0 +1,158 @@
+*{
+    color: #dcf1fa;
+}
+
+body{
+    background-color: #111827 !important;
+}
+
+#form-container{
+    width: 60%;
+}
+
+#form-container h1{
+    color: #dcf1fa !important;
+}
+
+.star{
+    color: #dd6068 !important;
+}
+
+form label{
+    color: #dcf1fa;
+}
+
+form input{
+    color: #dcf1fa !important;
+    background-color: #1d2432 !important;
+}
+
+form input::placeholder{
+    color: #58545a !important;
+}
+
+form input:focus{
+    box-shadow: none !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.input-custom-width{
+    width: 60% !important;
+}
+
+form select{
+    color: #dcf1fa !important;
+    /* background-color: #1d2432 !important; */
+    border: none !important;
+    cursor: pointer;
+    background: #1d2432 url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='white' d='M2 5L0 2h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px !important;
+}
+
+form select:focus{
+    box-shadow: none !important;
+}
+
+input[type="radio"]{
+    cursor: pointer;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader::after{
+    content: '';
+    width: 75px;
+    height: 75px;
+    border: 10px solid #dddddd;
+    border-top-color: #7449f5;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading{
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+@media (max-width: 576px){
+
+    #form-container{
+        width: 100%;
+    }
+
+    .input-custom-width{
+        width: 100% !important;
+    }
+
+    .loader::after{
+        content: '';
+        width: 60px;
+        height: 60px;
+        border: 8px solid #dddddd;
+        border-top-color: #7449f5;
+        border-radius: 50%;
+        animation: loading 0.75s ease infinite;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    
+    #form-container{
+        width: 100%;
+    }
+
+    .input-custom-width{
+        width: 100% !important;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    
+    #form-container{
+        width: 100%;
+    }
+
+    .input-custom-width{
+        width: 70% !important;
+    }
+
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    
+    #form-container{
+        width: 70%;
+    }
+
+    .input-custom-width{
+        width: 60% !important;
+    }
+
+}
