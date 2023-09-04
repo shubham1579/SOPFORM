@@ -58,7 +58,7 @@ function customizeSOP(parcel) {
             <li><strong>Age:</strong> ${parcel.age}</li>
             <li><strong>Highest Level of Education:</strong> ${parcel.educationLevel}</li>
             <li><strong>Institute name:</strong> ${parcel.educationInstitute}</li>
-            <li><strong>Study field:</strong> ${parcel.educationInstitute}</li>
+            <li><strong>Study field:</strong> ${parcel.studyField}</li>
             <li><strong>Work experience:</strong> ${parcel.workExperience}</li>
             <li><strong>Ever studied in Canada:</strong> ${parcel.studiedCanada}</li>
             <li><strong>Institute Name:</strong> ${parcel.canadianInstitute}</li>

@@ -102,7 +102,7 @@ form.addEventListener('input', () => {
 });
 
 // url to which the ajax call to be done
-const baseUrl = 'https://sopform-app.onrender.com/';
+const baseUrl = '/';
 
 // adding a listener function to the submit button
 submitButton.addEventListener('click', submitForm);
