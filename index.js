@@ -1,7 +1,7 @@
 // Requiring important modules
 const express = require('express');
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 const nodemailer = require('nodemailer');
 
 app.use(express.static('./FrontEnd'));
