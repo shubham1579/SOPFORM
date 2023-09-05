@@ -14,6 +14,66 @@ const gic = document.querySelector('.gic');
 const submitButton = document.getElementById('submit');
 const resetButton = document.getElementById('reset');
 const loader = document.querySelector('.loader');
+const age = document.getElementById('age');
+const listeningScore = document.getElementById('listeningScore');
+const readingScore = document.getElementById('readingScore');
+const speakingScore = document.getElementById('speakingScore');
+const writingScore = document.getElementById('writingScore');
+
+
+// condition checking for input field to have values between 1 and 100
+age.addEventListener('input', () => {
+    const ageValue = parseInt(age.value);
+
+    if(ageValue < 1 || ageValue > 100){
+        alert('Value must be between 1 and 100');
+        age.value = '';
+    }
+});
+
+
+// condition checking for input field to have values between 0 and 100
+listeningScore.addEventListener('input', () => {
+    const listeningValue = parseInt(listeningScore.value);
+
+    if(listeningValue < 0 || listeningValue > 100){
+        alert('Value must be between 0 and 100');
+        listeningScore.value = '';
+    }
+});
+
+
+// condition checking for input field to have values between 0 and 100
+readingScore.addEventListener('input', () => {
+    const readingValue = parseInt(readingScore.value);
+
+    if(readingValue < 0 || readingValue > 100){
+        alert('Value must be between 0 and 100');
+        readingScore.value = '';
+    }
+});
+
+
+// condition checking for input field to have values between 0 and 100
+speakingScore.addEventListener('input', () => {
+    const speakingValue = parseInt(speakingScore.value);
+
+    if(speakingValue < 0 || speakingValue > 100){
+        alert('Value must be between 0 and 100');
+        speakingScore.value = '';
+    }
+});
+
+
+// condition checking for input field to have values between 0 and 100
+writingScore.addEventListener('input', () => {
+    const writingValue = parseInt(writingScore.value);
+
+    if(writingValue < 0 || writingValue > 100){
+        alert('Value must be between 0 and 100');
+        writingScore.value = '';
+    }
+});
 
 
 // Loop through the studiedCanada field to disable or enable the input field of canada Institute and program
